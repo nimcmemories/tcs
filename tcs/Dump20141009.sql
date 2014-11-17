@@ -58,7 +58,7 @@ CREATE TABLE `cbevents` (
   UNIQUE KEY `index3` (`eventtype`,`helperid`),
   KEY `fk_cbevents_1_idx` (`helperid`),
   CONSTRAINT `fk_cbevents_1` FOREIGN KEY (`helperid`) REFERENCES `cbhelpers` (`helperid`) ON DELETE NO ACTION ON UPDATE NO ACTION
-) ENGINE=InnoDB AUTO_INCREMENT=9 DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB AUTO_INCREMENT=10915 DEFAULT CHARSET=latin1;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -67,7 +67,7 @@ CREATE TABLE `cbevents` (
 
 LOCK TABLES `cbevents` WRITE;
 /*!40000 ALTER TABLE `cbevents` DISABLE KEYS */;
-INSERT INTO `cbevents` VALUES (2,0,1),(1,1,1),(6,2,1),(0,2,2),(7,3,1),(8,4,1);
+INSERT INTO `cbevents` VALUES (2,0,1),(10914,0,3),(1,1,1),(6,2,1),(0,2,2),(7,3,1),(8,4,1);
 /*!40000 ALTER TABLE `cbevents` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -86,7 +86,7 @@ CREATE TABLE `cbhelpers` (
   UNIQUE KEY `name_UNIQUE` (`name`),
   KEY `fk_cbhelpers_1_idx` (`subentityid`),
   CONSTRAINT `fk_cbhelpers_1` FOREIGN KEY (`subentityid`) REFERENCES `cbsubentity` (`subentityid`) ON DELETE NO ACTION ON UPDATE NO ACTION
-) ENGINE=InnoDB AUTO_INCREMENT=3 DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB AUTO_INCREMENT=4 DEFAULT CHARSET=latin1;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -95,7 +95,7 @@ CREATE TABLE `cbhelpers` (
 
 LOCK TABLES `cbhelpers` WRITE;
 /*!40000 ALTER TABLE `cbhelpers` DISABLE KEYS */;
-INSERT INTO `cbhelpers` VALUES (1,'com.cab.helper.TestHelper',3),(2,'com.cab.helper.DashBoardHelper',4);
+INSERT INTO `cbhelpers` VALUES (1,'com.cab.helper.TestHelper',3),(2,'com.cab.helper.DashBoardHelper',4),(3,'com.cab.helper.LoginHelper',4);
 /*!40000 ALTER TABLE `cbhelpers` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -252,4 +252,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2014-11-01 15:48:07
+-- Dump completed on 2014-11-17  9:38:09
