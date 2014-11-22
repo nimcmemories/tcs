@@ -1,12 +1,11 @@
 <!DOCTYPE html>
 <!--
-To change this license header, choose License Headers in Project Properties.
-To change this template file, choose Tools | Templates
-and open the template in the editor.
+Author: Nisheeth Shah
+Created On: November 18, 2014
 -->
 <html>
     <head>
-        <title>TCS</title>
+        <title>Transport Consultancy Services</title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link href="framework/css/metro-bootstrap.css" rel="stylesheet">
@@ -14,26 +13,31 @@ and open the template in the editor.
         <link href="framework/css/iconFont.css" rel="stylesheet">
         <link href="framework/css/docs.css" rel="stylesheet">
         <link href="framework/js/prettify/prettify.css" rel="stylesheet">
+        <link href="css/common.css" rel="stylesheet">
 
         <script src="framework/js/jquery/jquery.min.js" ></script>
         <script src="framework/js/jquery/jquery.widget.min.js" ></script>
         <script src="framework/js/jquery/jquery.mousewheel.js" ></script>
         <script src="framework/js/prettify/prettify.js" ></script>
         <script src="framework/js/load-metro.js" ></script>
-        <script src="framework/js/cc.js" ></script>
+        <Script src="javascript/language/English/Language.js"></script>
+        <script src="javascript/ApplicationConstants.js" ></script>
+        <script src="javascript/CommonFunctions.js" ></script>
+        <script src="javascript/Navigation.js" ></script>
+        <script src="javascript/Startup.js"></script>
     </head>
     <body class="metro">
         <header class="bg-black">
             <nav class="navigation-bar dark">
-                <nav class="navigation-bar-content">
-                    <a class="element" href="#"><span class="icon-bus"></span> Transport Consultancy Services </a>
-                    <span class="element-divider"></span>
-                    <div class="no-tablet-portrait no-phone">
-                        <a class="element place-right" href="#"><span class="icon-key-2"></span> Login </a>
-                        <span class="element-divider place-right"></span>
-                        <a href="#" class="element place-right"><span class="icon-book"></span> Register </a>
-                        <span class="element-divider place-right"></span>
-                    </div>
+                <nav class="navigation-bar-content" id="navcontent">
+                    <!--                    <div class="element"><span class="icon-bus"></span> Transport Consultancy Services </div>
+                                        <span class="element-divider"></span>
+                                        <div class="no-tablet-portrait no-phone">
+                                            <a class="element place-right" href="#"><span class="icon-key-2"></span> Login </a>
+                                            <span class="element-divider place-right"></span>
+                                            <a href="#" class="element place-right"><span class="icon-book"></span> Register </a>
+                                            <span class="element-divider place-right"></span>
+                                        </div>-->
                 </nav>
             </nav>
         </header>
@@ -41,28 +45,20 @@ and open the template in the editor.
             <div class="grid">
                 <div class="row">
                     <div class="span9 offset3">
-                        <div class="panel">
-                        	
-                            <div class="panel-header">Registration</div>
-                            <div class="panel-content">
-                            
-                            <form name="hello" id="hello">
-                            	<div id="nimc" name="nimc"></div>
-                            	<legend>Organization</legend>
-                            			<input type="hidden" name="__eventid" value="10914">
-                                        <label>UserName</label>
-                                        <div class="input-control text" data-role="input-control">
-                                            <input type="text" name="username" id="h2" placeholder="type text">
-                                            <button class="btn-clear" tabindex="-1"></button>
-                                        </div>
-                                        <label>password</label>
-                                        <div class="input-control text" data-role="input-control">
-                                            <input type="text" placeholder="type text" name="password" id="b2">
-                                            <button class="btn-clear" tabindex="-1"></button>
-                                        </div>
-                                   <input type="button" onclick="login();">     
-                                                               </div>
+                        <div class="carousel">
+                            <div class="slide">
+                                <h1>Nisheeth</h1>
+                            </div>
+                            <div class="slide">
+                                <h1>Jagrut</h1>
+                            </div>
+                            <div class="slide">
+                                <h1>Pratima</h1>
+                            </div>
+                            <a class="controls left"><i class="icon-arrow-left-3"></i></a>
+                            <a class="controls right"><i class="icon-arrow-right-3"></i></a>
                         </div>
+
                     </div>
                 </div>
             </div>
